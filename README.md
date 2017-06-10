@@ -119,7 +119,7 @@ if (php_sapi_name() == "cli-server") {
 So when I'm locally I mock VCAP_SERVICES with my local values and also, for example, configure Silex application in debug mode.
 
 Sometimes I want to run my application locally but I want to use the cloud services. I cannot connect directly to those services, but we can do it over ssh through our connected application.
-For example If our PostgreSQL application is running on 10.11.241.0:48825 we can map this remote port to our local port with this command
+For example If our PostgreSQL application is running on 10.11.241.0:48825 we can map this remote port (in a private network) to our local port with this command
 
 ```
 cf ssh -N -T -L 48825:10.11.241.0:48825 silex
