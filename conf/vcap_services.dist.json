@@ -1,0 +1,22 @@
+{
+  "postgresql": [
+    {
+      "credentials": {
+        "hostname": "localhost",
+        "port": "48825",
+        "username": "username",
+        "password": "password",
+        "dbname": "dbname"
+      }
+    }
+  ],
+  "redis": [
+    {
+      "credentials": {
+        "hostname": "localhost",
+        "port": "54266",
+        "password": "password"
+      }
+    }
+  ]
+}
